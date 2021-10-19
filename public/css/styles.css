@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #666;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 5% 5% 5%;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+
+main {
+    padding: 0px 5% 20px 5%;
+    background-color: #ebebeb;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+
+p{
+    font-size: 12px;
+}
+
+footer {
+    padding: 20px 5% 20px;
+    background-color: #fff;
+}
+
+main h2 {
+    padding-top: 30px;
+    font-size: 24px;
+    color: #666;
+}
+
+article {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.img-article {
+    width: 70%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+img.logo {
+    width: 38%;
+    display: block;
+    margin-left: 0;
+    
+}
+
+header p {
+    text-align: center;
+    margin:10px 0px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header p i{
+    color: #000;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    margin: 10px auto 0px auto;
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+section.banner img{
+    width: 100%;
+}
+
+.precio {
+    font-size: 18px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    font-weight: bolder;
+}
+
+.descripcion {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.caja-articulo {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+main section article i{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #39b54a;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+}
+
+footer section{
+    width: 70%;
+    margin: 40px auto 0px;
+    text-align: center;
+}
+
+footer i {
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.copyright { 
+    width: 100%;
+    border-radius: 0px;
+    margin: 60px 0px 0px;
+    text-align: left;
+}
+
+@media (min-width: 769px){
+
+    main section div.articulos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section div.articulos article {
+        width: 22%;
+        flex-wrap: wrap;
+    }
+
+
+    main section article:hover i {
+        transition: transform 250ms ease-out;
+        transform: rotate(-90deg);
+    }
+
+}
+
+
