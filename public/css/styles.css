@@ -7,33 +7,61 @@
     color: #666;
 }
 
+body {
+    min-width: 320px;
+}
 header {
     background-color: #EAC926;
-    padding: 5% 5% 5%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
 }
 
 nav {
+    position: absolute;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #03264C;
+    top: calc(100%);
+    left: 0px;
+    width: 80%;
+    z-index: 1;
+    max-width: 340px;
 }
 
 nav ul {
     display: flex;
+    flex-direction: column;
+    list-style: none;
+    
 }
 
+nav ul a{
+    padding-left: 30px;
+    border-bottom: 1px solid #666;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+nav ul a li {
+    width: 100%;
+    color: white;
+    font-size: large;
+    height: fit-content;
+}
+
+nav ul a li i{
+    color: white;
+    margin: 10px;
+}
 
 main {
     padding: 0px 5% 20px 5%;
     background-color: #ebebeb;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    color: #000;
 }
 
 p{
@@ -66,6 +94,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
 }
 
 img.img-article {
@@ -83,10 +112,12 @@ img.logo {
 
 header p {
     text-align: center;
-    margin:10px 0px;
+    width: fit-content;
+    margin:10px auto;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
+    
 }
 
 header p i{
@@ -95,6 +126,7 @@ header p i{
 
 .burger-menu{
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .burger-menu i{
@@ -105,10 +137,38 @@ header p i{
     font-size: 20px;
     padding: 10px;
 
+
 }
 
 section.banner img{
     width: 100%;
+}
+
+#site-search{
+    width:70%;
+    display: block;
+    margin: auto;
+    position: relative;
+    font-size: 15pt;
+    border-radius: 5px;
+    border: unset;
+    text-align: center;
+}
+
+header button{
+    position: relative;
+    top: -24px;
+    margin-right: 15%;
+    z-index: 2;
+    float: right;
+    font-size: 15px;
+    border: unset;
+    border-left: 1px solid #666;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: lightgray;
+    height: 24px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .precio {
@@ -167,7 +227,8 @@ footer i {
     text-align: left;
 }
 
-@media (min-width: 769px){
+
+@media (min-width: 768px){
 
     main section div.articulos {
         display: flex;
@@ -185,6 +246,102 @@ footer i {
         transform: rotate(-90deg);
     }
 
+    img.logo {
+        width: 25%;
+        display: inline-block;
+    }
+
+    #site-search{
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        float: right;
+    }
+
+    header button {
+        position: absolute;
+        float: right;
+        top: inherit;
+        right: 5%;
+        margin: 0px;
+    }
+
+    .item-footer{
+        max-width: 480px;
+    }
+
+    header p{
+        font-size:  14px;
+    }
+
 }
 
+@media (min-width: 1024px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .item-footer{
+        width: 20%;
+    }
+    
+    .copyright{
+        width: 100%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    nav {
+        position: inherit;
+        flex-direction: row;
+        background-color: unset;
+        max-width: none;
+        width: 100%;
+        padding-bottom: 14px;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+    
+    nav ul a{
+        border: none;
+        margin-left: 30px;
+        padding-left: 0px;
+    }
+
+    nav ul a:hover li{
+        color: grey;
+    }
+
+    nav ul a:hover li i{
+        color: grey;
+    }
+
+    nav ul a li{
+        color: black;
+    }
+
+    nav ul a li i{
+        color: black;
+    }
+
+    header p{
+        width: 100%;
+        font-size:  16px;
+    }
+
+    #site-search{
+        height: fit-content;
+        margin: 0px;
+        max-width: 500px;
+    }
+}
 
